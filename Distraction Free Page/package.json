@@ -1,0 +1,11 @@
+{
+  "name": "distraction-free-page",
+  "version": "1.0.0",
+  "description": "Chrome extension to block ads and popups",
+  "scripts": {
+    "convert-icon": "node convert-icon.js"
+  },
+  "dependencies": {
+    "sharp": "^0.32.1"
+  }
+} 

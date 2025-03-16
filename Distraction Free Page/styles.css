@@ -1,0 +1,43 @@
+/* Hide common ad containers */
+[class*="ad-container"],
+[class*="advertisement"],
+[class*="sponsored-content"],
+[class*="banner-ad"],
+[id*="ad-wrapper"],
+[data-ad-status],
+.advertisement,
+.sponsored-content,
+.ad-unit {
+  display: none !important;
+}
+
+/* Hide popup overlays */
+[class*="popup-overlay"],
+[class*="modal-backdrop"],
+[class*="lightbox-overlay"],
+.overlay {
+  display: none !important;
+}
+
+/* Remove empty spaces left by blocked ads */
+[style*="height: 1px"],
+[style*="height: 0px"],
+[style*="visibility: hidden"] {
+  display: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Prevent fixed position elements that might be ads */
+[class*="fixed-"],
+[style*="position: fixed"] {
+  position: static !important;
+}
+
+/* Hide newsletter signup forms */
+[class*="newsletter-"],
+[id*="subscribe-"],
+[class*="signup-form"] {
+  display: none !important;
+} 
